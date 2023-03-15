@@ -9823,7 +9823,7 @@ h6,
   left: 0;
   width: 100px;
   height: 5px;
-  background: #F195B2;
+  background: #ffbd59;
 }
 
 .section-title::after {
@@ -9833,7 +9833,7 @@ h6,
   left: 0;
   width: 100px;
   height: 1px;
-  background: #62C3E7;
+  background: #ffbd59;
 }
 
 .section-title.text-center::before,
