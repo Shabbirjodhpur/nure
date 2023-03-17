@@ -137,6 +137,17 @@ stroke-dashoffset:0;
 		fill:white;
 	}
 }
+@keyframes display-nure{
+	from {
+		display:block;
+	}
+	to {
+		display:none;
+	}
+}
+#logo-nure-container{
+animation:display-nure 2s ease forwards 5s;
+}
 </style>
 </head>
 
@@ -1106,8 +1117,7 @@ Masha Allah worth the wait, Thank you for NURE</p>
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 	<script>
-		setTimeout(()=>{
-			document.getElementById("logo-nure-container").style.display="none";
+	
 			window.scroll(0,0)
 		},5000)
 		
