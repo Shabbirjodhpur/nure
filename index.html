@@ -164,7 +164,7 @@ animation:display-nure 2s ease forwards 5s;
 </div>
 
 
-<div id="logo-nure-container" style="position: fixed;z-index: 999;width: 100vw;height: 100vh;background-color: black;">
+<div id="logo-nure-container" style="position: fixed;z-index: 999;width: 100vw;height: 100vh;background-color: black;/* display: none; */">
 
 <svg id="logo-nure" width="484" height="138" viewBox="0 0 484 138" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M82.434 7.31798V2.07999H119.488V7.31798L108.818 8.28799C106.749 8.54665 105.52 9.12865 105.132 10.034C104.744 10.81 104.55 13.3966 104.55 17.794V134H95.044L24.428 14.884V118.286C24.428 122.683 24.622 125.335 25.01 126.24C25.398 127.016 26.6267 127.533 28.696 127.792L39.366 128.956V134H2.31201V128.956L12.982 127.792C15.0513 127.533 16.28 127.016 16.668 126.24C17.056 125.335 17.25 122.683 17.25 118.286V17.794C17.25 13.3966 17.056 10.81 16.668 10.034C16.28 9.12865 15.0513 8.54665 12.982 8.28799L2.31201 7.31798V2.07999H35.874L97.372 106.064V17.794C97.372 13.3966 97.178 10.81 96.79 10.034C96.402 9.12865 95.1733 8.54665 93.104 8.28799L82.434 7.31798Z" stroke="white" stroke-width="4" mask="url(#path-1-outside-1_1_8)"></path>
@@ -260,7 +260,7 @@ animation:display-nure 2s ease forwards 5s;
             <div class="carousel-inner" style="
     padding: -1px;
 ">
-                <div class="carousel-item active">
+                <div class="carousel-item">
                     <img class="w-100" src="img/carousel-1.jpg" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
@@ -273,7 +273,7 @@ animation:display-nure 2s ease forwards 5s;
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item active">
                     <img class="w-100" src="img/carousel-2.jpg" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
@@ -762,7 +762,10 @@ animation:display-nure 2s ease forwards 5s;
                     <!-- <div class="owl-nav"><div class="owl-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></div><div class="owl-next"><i class="fa fa-angle-right" aria-hidden="true"></i></div></div> --><div style="
     display: flex;
     justify-content: center;
-"><div style="
+"><img src="./img/nure/pricing.jpg" style="
+    width: 100vw;
+    max-width: 380px;
+"><!-- <div style="
     width: 40vw;
     min-width: 300px;
     border: 1px solid black;
@@ -846,7 +849,7 @@ animation:display-nure 2s ease forwards 5s;
     width: 100%;
     margin: 16px 0px;
 ">Order Now</button></a>
-</div></div></div><div class="disabled"><div class=""></div><div class=""></div></div><div class="owl-dots disabled"></div></div>
+</div></div> --></div><div class="disabled"><div class=""></div><div class=""></div></div><div class="owl-dots disabled"></div></div>
                 </div>
             </div>
         </div>
@@ -1016,13 +1019,21 @@ animation:display-nure 2s ease forwards 5s;
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <h1 class="section-title position-relative text-center text-white" style="
-    margin-bottom: 1rem;
-">Can't have ice cream just coz it has dairy?</h1>
+    /* margin-bottom: 1rem; */
+    margin: 0;
+">Shoo away the fear of dairy. </h1>
+<h1 class=" position-relative text-center text-white" style="
+    /* margin-bottom: 1rem; */
+    margin: 0;
+">Coz it's no more. </h1>
+<h1 class=" position-relative text-center text-white" style="
+    /* margin-bottom: 1rem; */
+">Not in our ice cream, at least🍦 </h1>
                 </div>
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-12 " id="testimonials">
-                    <div style="
+                    <!-- <div style="
     background: #ffbd59;
     width: 20vw;
     min-width: 300px;
@@ -1056,7 +1067,11 @@ animation:display-nure 2s ease forwards 5s;
     background-color: black;
     color: white;
     border-radius: 8px;
-">Join the wait list</button></a> --></div>
+">Join the wait list</button></a>-->
+    <img src="img/nure/1.0.jpg" style="
+    width: 100vw;
+    max-width: 400px;
+">
                 </div>
             </div>
         </div>
@@ -1264,4 +1279,5 @@ waitlistPopup.style.display='none';
 
 
 <div id="lightboxOverlay" class="lightboxOverlay" style="display: none;"></div><div id="lightbox" class="lightbox" style="display: none;"><div class="lb-outerContainer"><div class="lb-container"><img class="lb-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="><div class="lb-nav"><a class="lb-prev" href=""></a><a class="lb-next" href=""></a></div><div class="lb-loader"><a class="lb-cancel"></a></div></div></div><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div><div class="lb-closeContainer"><a class="lb-close"></a></div></div></div></div>
+
 </body></html>
