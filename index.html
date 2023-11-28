@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head>
 <!-- Google tag (gtag.js) -->
-<script async="" src="https://www.clarity.ms/s/0.7.10/clarity.js"></script><script async="" src="https://www.clarity.ms/tag/i1bvax9012"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-MNQ1DZEZ7P"></script>
+<script async="" src="https://www.clarity.ms/tag/i1bvax9012"></script><script async="" src="https://www.clarity.ms/tag/i1bvax9012"></script><script async="" src="https://www.clarity.ms/tag/i1bvax9012"></script><script async="" src="https://www.clarity.ms/tag/i1bvax9012"></script><script async="" src="https://www.clarity.ms/s/0.7.10/clarity.js"></script><script async="" src="https://www.clarity.ms/tag/i1bvax9012"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-MNQ1DZEZ7P"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -183,7 +183,7 @@ animation:display-nure 2s ease forwards 5s;
 </div>
 
 
-<div id="logo-nure-container" style="position: fixed;z-index: 999;width: 100vw;height: 100vh;background-color: black;">
+<div id="logo-nure-container" style="position: fixed;z-index: 999;width: 100vw;height: 100vh;background-color: black;/* display: none; */">
 
 <svg id="logo-nure" width="484" height="138" viewBox="0 0 484 138" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M82.434 7.31798V2.07999H119.488V7.31798L108.818 8.28799C106.749 8.54665 105.52 9.12865 105.132 10.034C104.744 10.81 104.55 13.3966 104.55 17.794V134H95.044L24.428 14.884V118.286C24.428 122.683 24.622 125.335 25.01 126.24C25.398 127.016 26.6267 127.533 28.696 127.792L39.366 128.956V134H2.31201V128.956L12.982 127.792C15.0513 127.533 16.28 127.016 16.668 126.24C17.056 125.335 17.25 122.683 17.25 118.286V17.794C17.25 13.3966 17.056 10.81 16.668 10.034C16.28 9.12865 15.0513 8.54665 12.982 8.28799L2.31201 7.31798V2.07999H35.874L97.372 106.064V17.794C97.372 13.3966 97.178 10.81 96.79 10.034C96.402 9.12865 95.1733 8.54665 93.104 8.28799L82.434 7.31798Z" stroke="white" stroke-width="4" mask="url(#path-1-outside-1_1_8)"></path>
@@ -760,7 +760,96 @@ animation:display-nure 2s ease forwards 5s;
 
 
     <!-- Products Start -->
-    <div class="container-fluid py-5" style="
+    <div class="py-5" style="
+    /* background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),url(&quot;./img/vanilla-icecream.jpg&quot;); */
+    background-color: white;
+" id="products">
+        <div class="container py-5" style="
+    background: rgba(210, 205, 204,0.5);
+    /* max-width: 100%; */
+    margin-left: 2rem;
+    margin-right: 2rem;
+    max-width: calc(100% - 4rem);
+">
+            <div class="row">
+          <div class="col-12 col-lg-4" style="
+    display: flex;
+    justify-content: center;
+">
+            <div style="
+    width: fit-content;
+    height: fit-content;
+    padding: 24px;
+    background-color: black;
+    border-radius: 12px;
+"><img src="./img/nure/nure1.png"></div>
+            </div>
+<div class="col-12 col-lg-8">
+    <div style="
+    background: white;
+    margin-right: 24px;
+    padding: 24px;
+    border-radius: 12px;
+">
+        <p>nureicecream.com</p>
+    <p>Signature Vanilla Soft Serve</p>
+<div style="
+    display: flex;
+    align-items: center;
+">
+    <span style="
+" class="flex-change-size-span">Size</span>
+    <ul style="" class="change-flex-price">
+
+<li class="orange-button-active" onClick="changeMl(100)" id="hundred-nure">100ml</li>
+<li class="grey-button-dull" onClick="changeMl(150)" id="one-fifty-nure">150ml</li>
+<li class="grey-button-dull" onClick="changeMl(350)" id="three-fifty-nure">350ml</li>
+<li class="grey-button-dull" onClick="changeMl(500)" id="five-hundred-nure">500ml</li>
+</ul>
+</div><div style="
+    padding-top: 12px;
+    display: flex;
+    align-items: center;
+">
+    <span>Quantity</span>
+    <div class="grey-button-dull" style="
+    padding: 8px 0px;
+    margin-left: 12px;
+    display: flex;
+    align-self: flex-start;
+">
+    <span onClick="decreaseQuantity()" style="padding: 0px 12px;">-</span>
+    <span id="quantity-nure" style="
+    padding: 0px 10px;
+">1</span>
+    <span onClick="increaseQuantity()" style="
+    padding: 0px 12px;
+">+</span>
+</div>
+</div>
+<div id="nure-price" style="
+    padding: 24px 0px;
+    color: #ffbd59;
+    font-weight: bold;
+    font-size: 18px;
+">
+Rs. 80
+</div>
+<div>
+<a onClick="orderWithSpecific()" class="btn btn-secondary mt-2" style="
+    background-color: #ffbd59;
+    border: 1px solid black;
+    color: black;
+    font-weight: 100;
+">Pre-order Now</a>
+</div></div>
+</div>          
+                
+            </div>
+            
+        </div>
+    </div>
+    <!-- <div class="container-fluid py-5" style="
     background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),url(&quot;./img/vanilla-icecream.jpg&quot;);
 " id="products">
         <div class="container py-5">
@@ -778,13 +867,13 @@ animation:display-nure 2s ease forwards 5s;
                         
                         
                         
-                    <!-- <div class="owl-nav"><div class="owl-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></div><div class="owl-next"><i class="fa fa-angle-right" aria-hidden="true"></i></div></div> --><div style="
+                    <div class="owl-nav"><div class="owl-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></div><div class="owl-next"><i class="fa fa-angle-right" aria-hidden="true"></i></div></div><div style="
     display: flex;
     justify-content: center;
 "><img src="./img/nure/pricing.jpg" style="
     width: 100vw;
     max-width: 380px;
-"><!-- <div style="
+"><div style="
     width: 40vw;
     min-width: 300px;
     border: 1px solid black;
@@ -868,7 +957,7 @@ animation:display-nure 2s ease forwards 5s;
     width: 100%;
     margin: 16px 0px;
 ">Order Now</button></a>
-</div></div> --></div><div style="
+</div></div></div><div style="
     display: flex;
     justify-content: center;
     padding-top: 18px;
@@ -882,8 +971,7 @@ animation:display-nure 2s ease forwards 5s;
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Products End -->
+    </div> --><!-- Products End -->
 
 
     <!-- Team Start -->
@@ -1303,6 +1391,7 @@ Masha Allah worth the wait, Thank you for NURE</p>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
 	<script>
 
 setTimeout(()=>{window.scroll(0,0);},5000)
