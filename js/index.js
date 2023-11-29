@@ -1,12 +1,12 @@
-var quantity = 1;
+var quantity = 2;
 var price = document.getElementById('nure-price');
 var previous_button = document.getElementById('hundred-nure');
 var currentMl = 100;
 function mapOfPrice(num){
-	if(num==100) return 80;
+	if(num==100) return 60;
 	if(num==150) return 85;
 	if(num==350) return 190;
-	if(num==500) return 300;
+	if(num==500) return 275;
 }
 function changeMl(num){
 	if(num==100){
@@ -20,6 +20,7 @@ function changeMl(num){
 
 		previous_button = current_button;
 		currentMl = 100;
+		quantity = 2
 	}
 	if(num==150){
 		var current_button = document.getElementById('one-fifty-nure');
@@ -32,6 +33,7 @@ function changeMl(num){
 
 		previous_button = current_button;
 		currentMl = 150;
+		quantity = 2
 	}
 	if(num==350){
 		var current_button = document.getElementById('three-fifty-nure');
@@ -44,6 +46,7 @@ function changeMl(num){
 
 		previous_button = current_button;
 		currentMl = 350
+		quantity = 1
 	}
 	if(num==500){
 		var current_button = document.getElementById('five-hundred-nure');
@@ -56,11 +59,19 @@ function changeMl(num){
 
 		previous_button = current_button;
 		currentMl = 500
+		quantity = 1
 	}
-	price.innerHTML = `Rs. ${mapOfPrice(num)*quantity}`	
+	price.innerHTML = `Rs. ${mapOfPrice(num)*quantity}`
+	document.getElementById('quantity-nure').innerText = quantity	
 }
 function decreaseQuantity(){
-	if (quantity==1) return;
+	if (quantity==2 && currentMl == 100 || quantity==2 && currentMl == 150){
+		alert(`minimum order quantity for ${currentMl}ml is 2`)
+		return;
+	}
+	if(quantity==1){
+		return;
+	}
 	quantity--;
 	document.getElementById('quantity-nure').innerText = quantity;
 	price.innerHTML = `Rs. ${mapOfPrice(currentMl)*quantity}`
