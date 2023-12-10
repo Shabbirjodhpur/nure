@@ -83,7 +83,7 @@ function increaseQuantity(){
 }
 
 function orderWithSpecific(){
-	window.location = `http://wa.me/918125830385?text=Hey%2C%20I%20would%20like%20to%20Pre%2Dorder%0AQuantity%3A%20${currentMl}%20ml%0ANumber%3A%20${quantity}%0ATotal%20Price%3A%20Rs%2E%20${mapOfPrice(currentMl)*quantity}`
+	window.location = `http://wa.me/918125830385?text=Hey%2C%20I%20would%20like%20to%20Pre%2Dorder%20Vanilla%20Soft%20Serve%0AQuantity%3A%20${currentMl}%20ml%0ANumber%3A%20${quantity}%0ATotal%20Price%3A%20Rs%2E%20${mapOfPrice(currentMl)*quantity}`
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -175,7 +175,7 @@ function increaseQuantityChoco(){
 }
 
 function orderWithSpecificChoco(){
-	window.location = `http://wa.me/918125830385?text=Hey%2C%20I%20would%20like%20to%20Pre%2Dorder%0AQuantity%3A%20${currentMlChoco}%20ml%0ANumber%3A%20${quantityChoco}%0ATotal%20Price%3A%20Rs%2E%20${mapOfPriceChoco(currentMlChoco)*quantityChoco}`
+	window.location = `http://wa.me/918125830385?text=Hey%2C%20I%20would%20like%20to%20Pre%2Dorder%20Chocolate%20Soft%20Serve%0AQuantity%3A%20${currentMlChoco}%20ml%0ANumber%3A%20${quantityChoco}%0ATotal%20Price%3A%20Rs%2E%20${mapOfPriceChoco(currentMlChoco)*quantityChoco}`
 }
 
 
