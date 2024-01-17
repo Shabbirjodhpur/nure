@@ -7,6 +7,7 @@ function mapOfPrice(num){
 	if(num==150) return 85;
 	if(num==350) return 190;
 	if(num==500) return 275;
+	if(num==1000) return 500;
 }
 function changeMl(num){
 	if(num==100){
@@ -61,6 +62,19 @@ function changeMl(num){
 		currentMl = 500
 		quantity = 1
 	}
+	if(num==1000){
+		var current_button = document.getElementById('thousand-nure');
+		if(previous_button.innerText==current_button.innerText) return;
+		current_button.classList.remove('grey-button-dull')
+		current_button.classList.add('orange-button-active')
+		
+		previous_button.classList.remove('orange-button-active')
+		previous_button.classList.add('grey-button-dull')
+
+		previous_button = current_button;
+		currentMl = 1000
+		quantity = 1
+	}
 	price.innerHTML = `Rs. ${mapOfPrice(num)*quantity}`
 	document.getElementById('quantity-nure').innerText = quantity	
 }
@@ -99,6 +113,7 @@ function mapOfPriceChoco(num){
 	if(num==150) return 85;
 	if(num==350) return 190;
 	if(num==500) return 275;
+	if(num==1000) return 500;
 }
 function changeMlChoco(num){
 	if(num==100){
@@ -151,6 +166,19 @@ function changeMlChoco(num){
 
 		previous_button_choco = current_button_choco;
 		currentMlChoco = 500
+		quantityChoco = 1
+	}
+	if(num==1000){
+		var current_button_choco = document.getElementById('thousand-nure-choco');
+		if(previous_button_choco.innerText==current_button_choco.innerText) return;
+		current_button_choco.classList.remove('grey-button-dull')
+		current_button_choco.classList.add('orange-button-active')
+		
+		previous_button_choco.classList.remove('orange-button-active')
+		previous_button_choco.classList.add('grey-button-dull')
+
+		previous_button_choco = current_button_choco;
+		currentMlChoco = 1000
 		quantityChoco = 1
 	}
 	priceChoco.innerHTML = `Rs. ${mapOfPriceChoco(num)*quantityChoco}`
